@@ -161,8 +161,8 @@ const ResultsGrid = () => {
           </div>
         ))}
       </div>
-      <p className="mt-8 text-center text-[10px] text-gray-600 uppercase tracking-tighter">
-        * Resultados individuais podem variar. Fotos com fins educativos.
+      <p className="mt-8 text-center text-[9px] text-gray-500 uppercase tracking-[0.3em] font-semibold">
+        * Resultados individuais podem variar. Imagens com finalidade clínica e informativa.
       </p>
 
       {selectedImg && <Lightbox src={selectedImg} onClose={() => setSelectedImg(null)} />}
@@ -316,6 +316,14 @@ const Footer = () => (
         <p className="text-gray-700 text-[9px] uppercase tracking-[0.2em] font-medium">
           © {new Date().getFullYear()} • Todos os direitos reservados
         </p>
+        <div className="max-w-md mx-auto mt-4 px-6 py-3 border border-red-900/30 bg-red-950/20 rounded-lg">
+          <p className="text-red-500/80 text-[10px] uppercase tracking-[0.2em] font-bold leading-relaxed">
+            Material Demonstrativo
+          </p>
+          <p className="text-gray-400 text-[9px] uppercase tracking-[0.1em] mt-1">
+            Uso e reprodução não autorizados. Conteúdo protegido.
+          </p>
+        </div>
       </div>
     </div>
   </footer>
